@@ -1,4 +1,4 @@
---aggregate table of movies an actor has appeared in each year
+--aggregate table of movies an actor has appeared in each year. 1 row per actor
 CREATE OR REPLACE TABLE actors (
   actor VARCHAR(255),
   actor_id VARCHAR(255),
