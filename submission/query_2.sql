@@ -19,7 +19,7 @@ this_year AS (
     ARRAY_AGG(ROW(film, votes, rating, film_id, year)) AS films,
     YEAR
   FROM
-    actor_films
+    bootcamp.actor_films
   WHERE
     YEAR = 1994
   GROUP BY
