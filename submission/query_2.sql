@@ -8,7 +8,7 @@ WITH last_year AS (
     quality_class,
     current_year
   FROM
-    bootcamp.actors
+    actors
   WHERE
     current_year =1993
 ),
@@ -19,7 +19,7 @@ this_year AS (
     ARRAY_AGG(ROW(film, votes, rating, film_id, year)) AS films,
     YEAR
   FROM
-    bootcamp.actor_films
+    actor_films
   WHERE
     YEAR = 1994
   GROUP BY
