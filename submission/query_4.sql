@@ -7,7 +7,7 @@ WITH previous_year_status AS (
     quality_class,
     LAG(quality_class, 1) OVER (PARTITION BY actor ORDER BY current_year) AS quality_class_last_year,
     current_year
-  FROM bootcamp.actors
+  FROM actors
   WHERE current_year <= (SELECT MAX(current_year) FROM actors)
 ),
 status_change_identifier AS (
