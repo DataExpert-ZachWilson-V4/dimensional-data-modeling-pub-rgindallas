@@ -8,7 +8,7 @@ WITH last_year AS (
     quality_class,
     current_year
   FROM
-    actors
+    bootcamp.actors
   WHERE
     current_year =1993
 ),
