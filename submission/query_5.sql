@@ -6,7 +6,7 @@ WITH last_year_scd AS ( -- Define a CTE named last_year_scd.
 ),
 current_year_scd AS (
   SELECT *
-  FROM actors -- Define a CTE named current_year_scd.
+  FROM bootcamp.actors -- Define a CTE named current_year_scd.
   WHERE current_year = 1999 -- This contains data from the current year to be loaded.
 ),
 combined AS (
